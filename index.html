@@ -208,9 +208,25 @@
     <footer style="text-align:center; padding:10px; font-size:14px; margin-top:20px;">
   © 2026 Support The Muslim. جميع الحقوق محفوظة.
 </footer>
+    <script src="script.js"></script>
+
+<script>
+window.onload = function() {
+  document.oncontextmenu = function() { return false; };
+  document.onselectstart = function() { return false; };
+  document.ondragstart = function() { return false; };
+  document.oncopy = function(e) {
+    e.preventDefault();
+    alert('نسخ المحتوى غير مسموح © 2026 رفيق المعتمر');
+  };
+};
+</script>
+
+</body>
 </body>
 
 </html>
+
 
 
 
